@@ -14,7 +14,7 @@ export default function Home({ data }) {
 					<div>
 						<h3>{post.title}</h3>
 						<p>{post.content.slice(0, 100) + "..."}</p>
-						<Link to="/">Learn more...</Link>
+						<Link to={`/blog/${post.id}`}>Learn more...</Link>
 					</div>
 				</div>
 			))}

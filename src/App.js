@@ -8,11 +8,13 @@ function App() {
 
 	return (
 		<div className="App">
-			<Link to="/"><h1>React Blog</h1></Link>
+			<div>
+        <Link to="/"><h1>React Blog</h1></Link>
+      </div>
 			<main>
 				<Routes>
 					<Route path="/" element={<Home data={data}/>} />
-					<Route path="/blog" element={<Blog />} />
+					<Route path="/blog/:id" element={<Blog data={data}/>} />
 				</Routes>
 			</main>
 		</div>
