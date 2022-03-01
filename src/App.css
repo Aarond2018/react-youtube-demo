@@ -17,8 +17,7 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-  
+  grid-gap: 2rem; 
 }
 
 .card {
@@ -67,4 +66,16 @@
 
 .blog *  {
   width: 100%
+}
+
+.btn {
+  display: inline;
+  padding: 0.5rem 2rem;
+  margin: 0.7rem 0;
+  width: auto;
+  background: #fff;
+  border: 1px solid #4cf;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
 }

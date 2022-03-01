@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
 
 export default function Home({ data }) {
-	console.log(data);
+	
 	return (
 		<div className="cards">
 			{data.posts.map(post => (
@@ -14,7 +13,7 @@ export default function Home({ data }) {
 					<div>
 						<h3>{post.title}</h3>
 						<p>{post.content.slice(0, 100) + "..."}</p>
-						<Link to={`/blog/${post.id}`}>Learn more...</Link>
+						<Link to={`/blogpost/${post.id}`}>Learn more...</Link>
 					</div>
 				</div>
 			))}

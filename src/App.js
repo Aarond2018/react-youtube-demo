@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
-import Blog from "./components/Blog";
+import BlogPost from "./components/BlogPost";
 import data from "./data.json"
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App() {
 			<main>
 				<Routes>
 					<Route path="/" element={<Home data={data}/>} />
-					<Route path="/blog/:id" element={<Blog data={data}/>} />
+					<Route path="/blogpost/:id" element={<BlogPost data={data}/>} />
 				</Routes>
 			</main>
 		</div>
