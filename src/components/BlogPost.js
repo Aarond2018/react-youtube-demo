@@ -13,6 +13,8 @@ export default function BlogPost({ data }) {
 		setPlayer(e.target)
 	};
 
+	console.log(player)
+
 	const onPlayHandler = e => {
 		player.playVideo()
 	}
